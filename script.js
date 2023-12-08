@@ -15,6 +15,7 @@ let gameInterval;
 let gameSpeedDelay = 200;
 let gameStarted = false;
 
+//functions
 function draw() {
     board.innerHTML = '';
     drawSnake();
@@ -56,7 +57,7 @@ function generateFood() {
     return { x, y };
 }
 
-// Moving the snake
+// Snake Movement
 function move() {
     const head = { ...snake[0] };
     switch (direction) {
